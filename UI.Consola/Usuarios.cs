@@ -23,9 +23,11 @@ namespace UI.Consola
 
         public void Menu()
         {
-            int op;
+            int op=0;
             Console.Clear();
-           
+
+            Console.WriteLine("MENU DE OPCIONES");
+            Console.WriteLine();
             Console.WriteLine("1– Listado General");
             Console.WriteLine("2– Consulta");
             Console.WriteLine("3– Agregar");
@@ -36,8 +38,25 @@ namespace UI.Consola
 
             do
             {
-                Console.WriteLine("Ingrese una opcion del menu");
-                op = int.Parse(Console.ReadLine());
+                try
+                {
+
+                    Console.WriteLine("Ingrese una opcion del menu");
+                    op = int.Parse(Console.ReadLine());
+                }
+
+                catch (FormatException)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("La opcion ingresada debe ser un numero entero del menu!");
+                }
+
+                catch (Exception e)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine(e.Message);
+                }
+                
             } while (op < 1  || op > 6);
 
 

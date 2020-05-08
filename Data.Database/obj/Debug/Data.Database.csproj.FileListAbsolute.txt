@@ -1,0 +1,9 @@
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Data.Database\bin\Debug\Data.Database.dll
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Data.Database\bin\Debug\Data.Database.pdb
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Data.Database\bin\Debug\Business.Entities.dll
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Data.Database\bin\Debug\Business.Entities.pdb
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Data.Database\obj\Debug\Data.Database.csprojAssemblyReference.cache
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Data.Database\obj\Debug\Data.Database.csproj.CoreCompileInputs.cache
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Data.Database\obj\Debug\Data.Database.csproj.CopyComplete
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Data.Database\obj\Debug\Data.Database.dll
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Data.Database\obj\Debug\Data.Database.pdb

@@ -1,0 +1,14 @@
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\bin\Debug\UI.Consola.exe.config
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\bin\Debug\UI.Consola.exe
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\bin\Debug\UI.Consola.pdb
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\bin\Debug\Business.Entities.dll
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\bin\Debug\Business.Logic.dll
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\bin\Debug\Data.Database.dll
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\bin\Debug\Business.Entities.pdb
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\bin\Debug\Business.Logic.pdb
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\bin\Debug\Data.Database.pdb
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.Consola.csprojAssemblyReference.cache
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.Consola.csproj.CoreCompileInputs.cache
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.Consola.csproj.CopyComplete
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.Consola.exe
+C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.Consola.pdb
