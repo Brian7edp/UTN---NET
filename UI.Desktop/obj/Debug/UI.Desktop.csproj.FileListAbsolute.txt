@@ -14,3 +14,5 @@ C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.D
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.csproj.CopyComplete
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.exe
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.pdb
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.formLogin.resources
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.formMain.resources
