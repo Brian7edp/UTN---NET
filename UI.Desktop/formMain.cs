@@ -31,6 +31,10 @@ namespace UI.Desktop
             }
         }
 
-
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Usuarios appUsuarios = new Usuarios();
+            appUsuarios.Show();
+        }
     }
 }

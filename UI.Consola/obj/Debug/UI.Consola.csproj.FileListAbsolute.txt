@@ -7,7 +7,6 @@ C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\bin\Debug\Data
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\bin\Debug\Business.Entities.pdb
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\bin\Debug\Business.Logic.pdb
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\bin\Debug\Data.Database.pdb
-C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.Consola.csprojAssemblyReference.cache
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.Consola.csproj.CoreCompileInputs.cache
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.Consola.csproj.CopyComplete
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.Consola.exe

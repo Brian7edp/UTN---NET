@@ -1,6 +1,6 @@
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Business.Entities\bin\Debug\Business.Entities.dll
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Business.Entities\bin\Debug\Business.Entities.pdb
-C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Business.Entities\obj\Debug\Business.Entities.csprojAssemblyReference.cache
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Business.Entities\obj\Debug\Business.Entities.csproj.CoreCompileInputs.cache
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Business.Entities\obj\Debug\Business.Entities.dll
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\Business.Entities\obj\Debug\Business.Entities.pdb
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\Business.Entities\obj\Debug\Business.Entities.csprojAssemblyReference.cache

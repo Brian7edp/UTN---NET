@@ -16,3 +16,8 @@ C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.D
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.pdb
 C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.formLogin.resources
 C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.formMain.resources
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.Usuarios.resources
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\bin\Debug\Util.dll
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\bin\Debug\Util.pdb
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.ApplicationForm.resources
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.UsuarioDesktop.resources
