@@ -9,7 +9,7 @@ namespace Business.Entities
     public class Plan: BusinessEntity
     {
         private string _Descripcion;
-        private int _IDEspecialidad;
+        private Especialidad _Especialidad;
 
         public string Descripcion
         {
@@ -17,10 +17,11 @@ namespace Business.Entities
             set { _Descripcion = value; }
         }
 
-        public int IDEspecialidad
+        
+        public Especialidad Especialidad
         {
-            get { return _IDEspecialidad; }
-            set { _IDEspecialidad = value; }
+            get { return _Especialidad; }
+            set { _Especialidad = value; }
         }
     }
 }

@@ -36,5 +36,11 @@ namespace UI.Desktop
             Usuarios appUsuarios = new Usuarios();
             appUsuarios.Show();
         }
+
+        private void especialidadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Especialidades appEspecialidades = new Especialidades();
+            appEspecialidades.Show();
+        }
     }
 }

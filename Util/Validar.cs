@@ -19,11 +19,14 @@ namespace Util
             else return false;
         }
 
-        public static bool IsValidEmail(string email)
+        public static bool isValidEmail(string email)
         {
             if (string.IsNullOrWhiteSpace(email))
                 return false;
+            //if (Regex.IsMatch(email, @"^[^@]+@[^@]+\.[a-zA-Z]{2,}$"))
+            //{
 
+            //}
             try
             {
                 // Normalize the domain

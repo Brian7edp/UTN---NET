@@ -21,3 +21,6 @@ C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\bin\Debug\Util
 C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\bin\Debug\Util.pdb
 C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.ApplicationForm.resources
 C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.UsuarioDesktop.resources
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.Especialidades.resources
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.EspecialidadDesktop.resources
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.Personas.resources

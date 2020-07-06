@@ -17,22 +17,23 @@ namespace UI.Desktop
         public Usuarios()
         {
             InitializeComponent();
+            this.dgvUsuarios.AutoGenerateColumns = false;
         }
-
-
 
         public void Listar()
         {
             UsuarioLogic ul = new UsuarioLogic();
-            this.dgvUsuarios.DataSource = ul.GetAll();
+            try
+            {
+                this.dgvUsuarios.DataSource = ul.GetAll();
+            }
+            catch (Exception ExcepcionManejada)
+            {
+                MessageBox.Show(ExcepcionManejada.Message);
+            }
         }
 
         private void Usuarios_Load(object sender, EventArgs e)
-        {
-            Listar();
-        }
-
-        private void btnActualizar_Click(object sender, EventArgs e)
         {
             Listar();
         }
@@ -44,9 +45,9 @@ namespace UI.Desktop
 
         private void tsbNuevo_Click(object sender, EventArgs e)
         {
-            UsuarioDesktop formUsuario = new UsuarioDesktop(ApplicationForm.ModoForm.Alta);
-            formUsuario.ShowDialog();
-            this.Listar();
+            UsuarioDesktop formUser = new UsuarioDesktop(ApplicationForm.ModoForm.Alta);
+            formUser.ShowDialog();
+            Listar();
         }
 
         private void tsbEditar_Click(object sender, EventArgs e)
@@ -68,6 +69,16 @@ namespace UI.Desktop
                 UsuarioDesktop formUser = new UsuarioDesktop(ID, ApplicationForm.ModoForm.Baja);
                 formUser.ShowDialog();
                 Listar();
+            }
+        }
+
+        private void dgvUsuarios_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            foreach (DataGridViewRow row in this.dgvUsuarios.Rows)
+            {
+                row.Cells["nombre"].Value = ((Usuario)row.DataBoundItem).Persona.Nombre + " " + ((Usuario)row.DataBoundItem).Persona.Apellido;
+                row.Cells["legajo"].Value = ((Usuario)row.DataBoundItem).Persona.Legajo;
+                row.Cells["Tipo"].Value = ((Usuario)row.DataBoundItem).Persona.TipoPersona.ToString();
             }
         }
     }

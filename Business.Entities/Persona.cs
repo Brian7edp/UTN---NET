@@ -12,7 +12,7 @@ namespace Business.Entities
         private string _Direccion;
         private string _Email;
         private DateTime _FechaNacimiento;
-        private int _IDPlan;
+        private Plan _Plan;
         private int _Legajo;
         private string _Nombre;
         private string _Telefono;
@@ -42,12 +42,6 @@ namespace Business.Entities
             set { _FechaNacimiento = value; }
         }
 
-        public int IDPlan
-        {
-            get { return _IDPlan; }
-            set { _IDPlan = value; }
-        }
-
         public int Legajo
         {
             get { return _Legajo; }
@@ -66,6 +60,13 @@ namespace Business.Entities
             set { _Telefono = value; }
         }
 
+        
+        public Plan Plan
+        {
+            get { return _Plan; }
+            set { _Plan = value; }
+        }
+
         public TipoPersonas TipoPersona
         {
             get { return _TipoPersona; }
@@ -75,8 +76,9 @@ namespace Business.Entities
 
         public enum TipoPersonas
         {
-            Docente,
-            Alumno
+            Alumno,
+            Profesor,
+            Administrador
         }
 
 

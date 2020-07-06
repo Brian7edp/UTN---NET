@@ -7,8 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Text.RegularExpressions;
 using Business.Logic;
 using Business.Entities;
+using Util;
 
 namespace UI.Desktop
 {
@@ -19,10 +22,23 @@ namespace UI.Desktop
             InitializeComponent();
         }
 
+
         public Usuario UsuarioActual { get; set; }
 
         private void Adaptar(ModoForm modo)
         {
+            PersonaLogic pl = new PersonaLogic();
+            try
+            {
+                this.cmbPersona.DataSource = pl.GetAll();
+                this.cmbPersona.DisplayMember = "Legajo";
+                this.cmbPersona.AutoCompleteMode = AutoCompleteMode.Suggest;
+                this.cmbPersona.AutoCompleteSource = AutoCompleteSource.ListItems;
+            }
+            catch (Exception ExcepcionManejada)
+            {
+                Notificar(ExcepcionManejada.Message, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
             Modo = modo;
             switch (Modo)
             {
@@ -33,15 +49,30 @@ namespace UI.Desktop
                 case ModoForm.Baja:
                     btnAceptar.Text = "Eliminar";
                     chkHabilitado.Hide();
+                    btnVerAlumnos.Hide();
+                    btnVerProfesores.Hide();
                     break;
 
                 case ModoForm.Consulta:
                     btnAceptar.Text = "Aceptar";
                     chkHabilitado.Hide();
+                    btnVerAlumnos.Hide();
+                    btnVerProfesores.Hide();
                     break;
 
                 case ModoForm.Modificacion:
                     btnAceptar.Text = "Guardar";
+                    btnVerAlumnos.Hide();
+                    btnVerProfesores.Hide();
+                    if (UsuarioActual.Persona.TipoPersona != Persona.TipoPersonas.Administrador)
+                    {
+                        checkAdmin.Hide();
+                    }
+                    else
+                    {
+                        cmbPersona.Hide();
+                        label2.Hide();
+                    }
                     break;
             }
         }
@@ -56,7 +87,7 @@ namespace UI.Desktop
             UsuarioLogic usuarioLog = new UsuarioLogic();
             try
             {
-                UsuarioActual = usuarioLog.GetOne(ID);
+               UsuarioActual = usuarioLog.GetOne(ID);
             }
             catch (Exception ExcepcionManejada)
             {
@@ -71,12 +102,23 @@ namespace UI.Desktop
         {
             this.txtID.Text = this.UsuarioActual.ID.ToString();
             this.chkHabilitado.Checked = this.UsuarioActual.Habilitado;
-            this.txtNombre.Text = this.UsuarioActual.Nombre;
-            this.txtApellido.Text = this.UsuarioActual.Apellido;
-            this.txtEmail.Text = this.UsuarioActual.Email;
-            this.txtClave.Text = UsuarioActual.Clave;
-            this.txtUsuario.Text = UsuarioActual.NombreUsuario;
-            this.txtConfirmarClave.Text = UsuarioActual.Clave;           
+            txtClave.Text = UsuarioActual.Clave;
+            txtUsuario.Text = UsuarioActual.NombreUsuario;
+            if (UsuarioActual.Persona.TipoPersona == Persona.TipoPersonas.Administrador)
+            {
+                checkAdmin.Checked = true;
+            }
+            else
+            {
+                foreach (Persona p in ((List<Persona>)cmbPersona.DataSource))
+                {
+                    if (p.ID == UsuarioActual.Persona.ID)
+                    {
+                        this.cmbPersona.SelectedItem = p;
+                        break;
+                    }
+                }
+            }
         }
 
         public override void MapearADatos()
@@ -87,6 +129,17 @@ namespace UI.Desktop
                 {
                     UsuarioActual = new Usuario();
                     UsuarioActual.State = BusinessEntity.States.New;
+                    if (checkAdmin.Checked)
+                    {
+                        PersonaDesktop form = new PersonaDesktop(ModoForm.Alta, Persona.TipoPersonas.Administrador);
+                        form.ShowDialog();
+                        if (!form.salidaPorCancelar)
+                        {
+                            UsuarioActual.Persona = form.PersonaActual;
+                        }
+                        else throw new Exception("Registro cancelado");
+                    }
+                    else UsuarioActual.Persona = (Business.Entities.Persona)cmbPersona.SelectedItem;
                 }
                 else
                 {
@@ -95,9 +148,10 @@ namespace UI.Desktop
                 UsuarioActual.Habilitado = chkHabilitado.Checked;
                 UsuarioActual.Clave = txtClave.Text;
                 UsuarioActual.NombreUsuario = txtUsuario.Text;
-                UsuarioActual.Nombre = txtNombre.Text;
-                UsuarioActual.Apellido = txtApellido.Text;
-                UsuarioActual.Email = txtEmail.Text;
+                if (UsuarioActual.Persona.TipoPersona != Persona.TipoPersonas.Administrador)
+                {
+                    UsuarioActual.Persona = (Business.Entities.Persona)cmbPersona.SelectedItem;
+                }
             }
             else if (Modo == ModoForm.Baja)
                 UsuarioActual.State = BusinessEntity.States.Deleted;
@@ -134,7 +188,12 @@ namespace UI.Desktop
                 Notificar("La clave no coincide con su confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return false;
             }
-            
+            else if (cmbPersona.SelectedItem == null && !checkAdmin.Checked)
+            {
+                Notificar("Debe seleccionar un legajo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+
             else return true;
         }
 
@@ -155,6 +214,18 @@ namespace UI.Desktop
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnVerAlumnos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Personas form = new Personas(Persona.TipoPersonas.Alumno);
+            form.ShowDialog();
+        }
+
+        private void btnVerProfesores_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Personas form = new Personas(Persona.TipoPersonas.Profesor);
+            form.ShowDialog();
         }
     }
 }

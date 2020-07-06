@@ -35,6 +35,7 @@
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.especialidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,17 +76,25 @@
             // aBMCToolStripMenuItem
             // 
             this.aBMCToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.usuariosToolStripMenuItem});
+            this.usuariosToolStripMenuItem,
+            this.especialidadesToolStripMenuItem});
             this.aBMCToolStripMenuItem.Name = "aBMCToolStripMenuItem";
-            this.aBMCToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.aBMCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aBMCToolStripMenuItem.Text = "ABMC";
             // 
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
+            // 
+            // especialidadesToolStripMenuItem
+            // 
+            this.especialidadesToolStripMenuItem.Name = "especialidadesToolStripMenuItem";
+            this.especialidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.especialidadesToolStripMenuItem.Text = "Especialidades";
+            this.especialidadesToolStripMenuItem.Click += new System.EventHandler(this.especialidadesToolStripMenuItem_Click);
             // 
             // formMain
             // 
@@ -115,5 +124,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aBMCToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem especialidadesToolStripMenuItem;
     }
 }

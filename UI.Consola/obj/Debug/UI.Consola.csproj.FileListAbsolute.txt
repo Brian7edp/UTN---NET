@@ -11,3 +11,4 @@ C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.C
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.Consola.csproj.CopyComplete
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.Consola.exe
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.Consola.pdb
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Consola\obj\Debug\UI.Consola.csprojAssemblyReference.cache
