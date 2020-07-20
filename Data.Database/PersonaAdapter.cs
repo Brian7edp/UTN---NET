@@ -361,7 +361,7 @@ namespace Data.Database
 
         public void Save(Persona persona)
         {
-
+           
             if (persona.State == BusinessEntity.States.Deleted)
             {
                 this.Delete(persona.ID);

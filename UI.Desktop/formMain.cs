@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Business.Entities;
+using Business.Logic;
 
 namespace UI.Desktop
 {
@@ -41,6 +43,24 @@ namespace UI.Desktop
         {
             Especialidades appEspecialidades = new Especialidades();
             appEspecialidades.Show();
+        }
+
+        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Personas appAlumnos = new Personas(Persona.TipoPersonas.Alumno);
+            appAlumnos.Show();
+        }
+
+        private void profesoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Personas appProfesores = new Personas(Persona.TipoPersonas.Profesor);
+            appProfesores.Show();
+        }
+
+        private void planesYMateriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Planes appPlanes = new Planes();
+            appPlanes.Show();
         }
     }
 }

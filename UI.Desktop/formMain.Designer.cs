@@ -36,6 +36,9 @@
             this.aBMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.especialidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profesoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.planesYMateriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +80,10 @@
             // 
             this.aBMCToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuariosToolStripMenuItem,
-            this.especialidadesToolStripMenuItem});
+            this.alumnosToolStripMenuItem,
+            this.profesoresToolStripMenuItem,
+            this.especialidadesToolStripMenuItem,
+            this.planesYMateriasToolStripMenuItem});
             this.aBMCToolStripMenuItem.Name = "aBMCToolStripMenuItem";
             this.aBMCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aBMCToolStripMenuItem.Text = "ABMC";
@@ -95,6 +101,27 @@
             this.especialidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.especialidadesToolStripMenuItem.Text = "Especialidades";
             this.especialidadesToolStripMenuItem.Click += new System.EventHandler(this.especialidadesToolStripMenuItem_Click);
+            // 
+            // alumnosToolStripMenuItem
+            // 
+            this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
+            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alumnosToolStripMenuItem.Text = "Alumnos";
+            this.alumnosToolStripMenuItem.Click += new System.EventHandler(this.alumnosToolStripMenuItem_Click);
+            // 
+            // profesoresToolStripMenuItem
+            // 
+            this.profesoresToolStripMenuItem.Name = "profesoresToolStripMenuItem";
+            this.profesoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.profesoresToolStripMenuItem.Text = "Profesores";
+            this.profesoresToolStripMenuItem.Click += new System.EventHandler(this.profesoresToolStripMenuItem_Click);
+            // 
+            // planesYMateriasToolStripMenuItem
+            // 
+            this.planesYMateriasToolStripMenuItem.Name = "planesYMateriasToolStripMenuItem";
+            this.planesYMateriasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.planesYMateriasToolStripMenuItem.Text = "Planes y materias";
+            this.planesYMateriasToolStripMenuItem.Click += new System.EventHandler(this.planesYMateriasToolStripMenuItem_Click);
             // 
             // formMain
             // 
@@ -125,5 +152,8 @@
         private System.Windows.Forms.ToolStripMenuItem aBMCToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem especialidadesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem profesoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem planesYMateriasToolStripMenuItem;
     }
 }

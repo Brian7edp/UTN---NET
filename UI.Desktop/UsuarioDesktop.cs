@@ -211,6 +211,8 @@ namespace UI.Desktop
             }
         }
 
+        public bool salidaPorCancelar { get; set; }
+
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Close();
@@ -226,6 +228,15 @@ namespace UI.Desktop
         {
             Personas form = new Personas(Persona.TipoPersonas.Profesor);
             form.ShowDialog();
+        }
+
+        private void checkAdmin_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkAdmin.Checked)
+            {
+                this.cmbPersona.Hide();
+                this.label2.Hide();
+            }
         }
     }
 }

@@ -107,18 +107,20 @@
             // txtID
             // 
             this.txtID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtID.Location = new System.Drawing.Point(172, 20);
+            this.tableLayoutPanel1.SetColumnSpan(this.txtID, 2);
+            this.txtID.Location = new System.Drawing.Point(186, 20);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
-            this.txtID.Size = new System.Drawing.Size(131, 20);
+            this.txtID.Size = new System.Drawing.Size(206, 20);
             this.txtID.TabIndex = 4;
             // 
             // txtDescripcion
             // 
             this.txtDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDescripcion.Location = new System.Drawing.Point(169, 80);
+            this.tableLayoutPanel1.SetColumnSpan(this.txtDescripcion, 2);
+            this.txtDescripcion.Location = new System.Drawing.Point(188, 80);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(136, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(203, 20);
             this.txtDescripcion.TabIndex = 5;
             // 
             // EspecialidadDesktop
