@@ -35,10 +35,11 @@
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aBMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.especialidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profesoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.especialidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planesYMateriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comisionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,7 +84,8 @@
             this.alumnosToolStripMenuItem,
             this.profesoresToolStripMenuItem,
             this.especialidadesToolStripMenuItem,
-            this.planesYMateriasToolStripMenuItem});
+            this.planesYMateriasToolStripMenuItem,
+            this.comisionesToolStripMenuItem});
             this.aBMCToolStripMenuItem.Name = "aBMCToolStripMenuItem";
             this.aBMCToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aBMCToolStripMenuItem.Text = "ABMC";
@@ -94,13 +96,6 @@
             this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
-            // 
-            // especialidadesToolStripMenuItem
-            // 
-            this.especialidadesToolStripMenuItem.Name = "especialidadesToolStripMenuItem";
-            this.especialidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.especialidadesToolStripMenuItem.Text = "Especialidades";
-            this.especialidadesToolStripMenuItem.Click += new System.EventHandler(this.especialidadesToolStripMenuItem_Click);
             // 
             // alumnosToolStripMenuItem
             // 
@@ -116,12 +111,26 @@
             this.profesoresToolStripMenuItem.Text = "Profesores";
             this.profesoresToolStripMenuItem.Click += new System.EventHandler(this.profesoresToolStripMenuItem_Click);
             // 
+            // especialidadesToolStripMenuItem
+            // 
+            this.especialidadesToolStripMenuItem.Name = "especialidadesToolStripMenuItem";
+            this.especialidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.especialidadesToolStripMenuItem.Text = "Especialidades";
+            this.especialidadesToolStripMenuItem.Click += new System.EventHandler(this.especialidadesToolStripMenuItem_Click);
+            // 
             // planesYMateriasToolStripMenuItem
             // 
             this.planesYMateriasToolStripMenuItem.Name = "planesYMateriasToolStripMenuItem";
             this.planesYMateriasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.planesYMateriasToolStripMenuItem.Text = "Planes y materias";
             this.planesYMateriasToolStripMenuItem.Click += new System.EventHandler(this.planesYMateriasToolStripMenuItem_Click);
+            // 
+            // comisionesToolStripMenuItem
+            // 
+            this.comisionesToolStripMenuItem.Name = "comisionesToolStripMenuItem";
+            this.comisionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.comisionesToolStripMenuItem.Text = "Comisiones";
+            this.comisionesToolStripMenuItem.Click += new System.EventHandler(this.comisionesToolStripMenuItem_Click);
             // 
             // formMain
             // 
@@ -155,5 +164,6 @@
         private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem profesoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem planesYMateriasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem comisionesToolStripMenuItem;
     }
 }

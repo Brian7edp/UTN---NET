@@ -62,5 +62,11 @@ namespace UI.Desktop
             Planes appPlanes = new Planes();
             appPlanes.Show();
         }
+
+        private void comisionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Comisiones appComisiones = new Comisiones();
+            appComisiones.Show();
+        }
     }
 }
