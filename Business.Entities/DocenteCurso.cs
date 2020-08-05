@@ -8,20 +8,20 @@ namespace Business.Entities
 {
     public class DocenteCurso:BusinessEntity
     {
-        private int _IDCurso;
-        private int _IDDocente;
+        private Curso _Curso;
+        private Persona _Docente;
         private TipoCargos _Cargo;
 
-        public int IDCurso
+        public Curso Curso
         {
-            get { return _IDCurso; }
-            set { _IDCurso = value; }
+            get { return _Curso; }
+            set { _Curso = value; }
         }
 
-        public int IDDocente
+        public Persona Docente
         {
-            get { return _IDDocente; }
-            set { _IDDocente = value; }
+            get { return _Docente; }
+            set { _Docente = value; }
         }
 
         public TipoCargos Cargo

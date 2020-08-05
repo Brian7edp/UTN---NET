@@ -30,3 +30,7 @@ C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.D
 C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.MateriaDesktop.resources
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.Comisiones.resources
 C:\Users\BrianDePadua\Source\Repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.ComisionDesktop.resources
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.Cursos.resources
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.DocentesCurso.resources
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.ElegirDocente.resources
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.CursoDesktop.resources

@@ -19,6 +19,20 @@ namespace UI.Desktop
             InitializeComponent();
         }
 
+        private Usuario _User;
+        public Usuario User
+        {
+            get { return _User; }
+            set { _User = value; }
+        }
+
+        private Persona _Persona;
+        public Persona Pers
+        {
+            get { return _Persona; }
+            set { _Persona = value; }
+        }
+
         private void mnuSalir_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -30,6 +44,26 @@ namespace UI.Desktop
             if (appLogin.ShowDialog() != DialogResult.OK)
             {
                 this.Dispose();
+            }
+
+            else
+            {
+                User = appLogin.user;
+                PersonaLogic pl = new PersonaLogic();
+                Pers = pl.GetOne(User.Persona.ID);
+                switch (Pers.TipoPersona)
+                {
+                    case Persona.TipoPersonas.Administrador:
+                        break;
+
+                    case Persona.TipoPersonas.Alumno:
+                        this.mnuABMC.Visible = false;
+                        break;
+
+                    case Persona.TipoPersonas.Profesor:
+                        this.mnuABMC.Visible = false;
+                        break;
+                }
             }
         }
 
@@ -67,6 +101,12 @@ namespace UI.Desktop
         {
             Comisiones appComisiones = new Comisiones();
             appComisiones.Show();
+        }
+
+        private void cursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cursos appCursos = new Cursos();
+            appCursos.Show();
         }
     }
 }
