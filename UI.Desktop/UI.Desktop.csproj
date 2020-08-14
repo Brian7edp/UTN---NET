@@ -82,6 +82,12 @@
     <Compile Include="DocentesCurso.Designer.cs">
       <DependentUpon>DocentesCurso.cs</DependentUpon>
     </Compile>
+    <Compile Include="ElegirComision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElegirComision.Designer.cs">
+      <DependentUpon>ElegirComision.cs</DependentUpon>
+    </Compile>
     <Compile Include="ElegirDocente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,12 @@
     </Compile>
     <Compile Include="Especialidades.Designer.cs">
       <DependentUpon>Especialidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InscripcionAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InscripcionAlumnos.Designer.cs">
+      <DependentUpon>InscripcionAlumnos.cs</DependentUpon>
     </Compile>
     <Compile Include="MateriaDesktop.cs">
       <SubType>Form</SubType>
@@ -180,6 +192,9 @@
     <EmbeddedResource Include="DocentesCurso.resx">
       <DependentUpon>DocentesCurso.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ElegirComision.resx">
+      <DependentUpon>ElegirComision.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ElegirDocente.resx">
       <DependentUpon>ElegirDocente.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Especialidades.resx">
       <DependentUpon>Especialidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InscripcionAlumnos.resx">
+      <DependentUpon>InscripcionAlumnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MateriaDesktop.resx">
       <DependentUpon>MateriaDesktop.cs</DependentUpon>

@@ -34,3 +34,5 @@ C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.D
 C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.DocentesCurso.resources
 C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.ElegirDocente.resources
 C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.CursoDesktop.resources
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.ElegirComision.resources
+C:\Users\BrianDePadua\source\repos\Brian7edp\UTN---NET\UI.Desktop\obj\Debug\UI.Desktop.InscripcionAlumnos.resources

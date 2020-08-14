@@ -16,8 +16,14 @@ namespace Data.Database
             try
             {
                 this.OpenConnection();
-                SqlCommand cmdMaterias = new SqlCommand("SELECT mat.id_materia,desc_materia, hs_semanales FROM materias mat " +
-                "INNER JOIN planes pla ON mat.id_plan = pla.id_plan", sqlConn);
+                SqlCommand cmdMaterias = new SqlCommand("SELECT mat.id_materia,desc_materia, hs_semanales " +
+                "FROM materias mat INNER JOIN planes pla ON mat.id_plan = pla.id_plan " +
+                "INNER JOIN(SELECT id_persona, id_plan FROM personas WHERE id_persona = @id_alu) alu " +
+                "ON alu.id_plan = pla.id_plan WHERE mat.id_materia NOT IN " +
+                "(SELECT distinct id_materia FROM cursos cur INNER JOIN alumnos_inscripciones alu_ins " +
+                "ON cur.id_curso = alu_ins.id_curso WHERE id_alumno = @id_alu AND condicion != @condicion)", sqlConn);
+                cmdMaterias.Parameters.Add("@id_alu", SqlDbType.Int).Value = IDAlumno;
+                cmdMaterias.Parameters.Add("@condicion", SqlDbType.VarChar, 50).Value = AlumnoInscripcion.Condiciones.Libre;
                 SqlDataReader drMaterias = cmdMaterias.ExecuteReader();
                 while (drMaterias.Read())
                 {

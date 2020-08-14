@@ -54,6 +54,7 @@ namespace UI.Desktop
                 switch (Pers.TipoPersona)
                 {
                     case Persona.TipoPersonas.Administrador:
+                        this.mnuInscripcionCursado.Visible = false;
                         break;
 
                     case Persona.TipoPersonas.Alumno:
@@ -62,6 +63,7 @@ namespace UI.Desktop
 
                     case Persona.TipoPersonas.Profesor:
                         this.mnuABMC.Visible = false;
+                        this.mnuInscripcionCursado.Visible = false;
                         break;
                 }
             }
@@ -107,6 +109,13 @@ namespace UI.Desktop
         {
             Cursos appCursos = new Cursos();
             appCursos.Show();
+        }
+
+        private void mnuInscripcionCursado_Click(object sender, EventArgs e)
+        {
+            InscripcionAlumnos appInscripcioAlumnos = new InscripcionAlumnos(Pers);
+            appInscripcioAlumnos.Show();
+
         }
     }
 }
