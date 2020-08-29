@@ -42,6 +42,7 @@
             this.comisionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuInscripcionCursado = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuRegistroNotas = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +76,8 @@
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuABMC,
-            this.mnuInscripcionCursado});
+            this.mnuInscripcionCursado,
+            this.mnuRegistroNotas});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menú";
@@ -150,6 +152,13 @@
             this.mnuInscripcionCursado.Text = "Inscripción a cursado";
             this.mnuInscripcionCursado.Click += new System.EventHandler(this.mnuInscripcionCursado_Click);
             // 
+            // mnuRegistroNotas
+            // 
+            this.mnuRegistroNotas.Name = "mnuRegistroNotas";
+            this.mnuRegistroNotas.Size = new System.Drawing.Size(186, 22);
+            this.mnuRegistroNotas.Text = "Registro de Notas";
+            this.mnuRegistroNotas.Click += new System.EventHandler(this.registroDeNotasToolStripMenuItem_Click);
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -185,5 +194,6 @@
         private System.Windows.Forms.ToolStripMenuItem comisionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cursosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuInscripcionCursado;
+        private System.Windows.Forms.ToolStripMenuItem mnuRegistroNotas;
     }
 }

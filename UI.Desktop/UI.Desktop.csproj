@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -106,6 +109,12 @@
     <Compile Include="Especialidades.Designer.cs">
       <DependentUpon>Especialidades.cs</DependentUpon>
     </Compile>
+    <Compile Include="IngresoNotaAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoNotaAlumno.Designer.cs">
+      <DependentUpon>IngresoNotaAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="InscripcionAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +156,12 @@
     </Compile>
     <Compile Include="Planes.Designer.cs">
       <DependentUpon>Planes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroNotas.Designer.cs">
+      <DependentUpon>RegistroNotas.cs</DependentUpon>
     </Compile>
     <Compile Include="UsuarioDesktop.cs">
       <SubType>Form</SubType>
@@ -204,6 +219,9 @@
     <EmbeddedResource Include="Especialidades.resx">
       <DependentUpon>Especialidades.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IngresoNotaAlumno.resx">
+      <DependentUpon>IngresoNotaAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InscripcionAlumnos.resx">
       <DependentUpon>InscripcionAlumnos.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Planes.resx">
       <DependentUpon>Planes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroNotas.resx">
+      <DependentUpon>RegistroNotas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsuarioDesktop.resx">
       <DependentUpon>UsuarioDesktop.cs</DependentUpon>
@@ -269,6 +290,9 @@
       <Project>{084be74f-c33e-44c5-9984-e0031dfe4f57}</Project>
       <Name>Util</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

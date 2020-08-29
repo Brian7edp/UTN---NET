@@ -55,10 +55,12 @@ namespace UI.Desktop
                 {
                     case Persona.TipoPersonas.Administrador:
                         this.mnuInscripcionCursado.Visible = false;
+                        this.mnuRegistroNotas.Visible = false;
                         break;
 
                     case Persona.TipoPersonas.Alumno:
                         this.mnuABMC.Visible = false;
+                        this.mnuRegistroNotas.Visible = false;
                         break;
 
                     case Persona.TipoPersonas.Profesor:
@@ -115,6 +117,13 @@ namespace UI.Desktop
         {
             InscripcionAlumnos appInscripcioAlumnos = new InscripcionAlumnos(Pers);
             appInscripcioAlumnos.Show();
+
+        }
+
+        private void registroDeNotasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroNotas appRegistroNotas = new RegistroNotas(Pers);
+            appRegistroNotas.Show();
 
         }
     }
