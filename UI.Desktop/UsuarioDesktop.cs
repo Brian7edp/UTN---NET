@@ -137,7 +137,8 @@ namespace UI.Desktop
                         {
                             UsuarioActual.Persona = form.PersonaActual;
                         }
-                        else throw new Exception("Registro cancelado");
+                        else throw new Exception ("Registro cancelado");
+
                     }
                     else UsuarioActual.Persona = (Business.Entities.Persona)cmbPersona.SelectedItem;
                 }
@@ -152,6 +153,7 @@ namespace UI.Desktop
                 {
                     UsuarioActual.Persona = (Business.Entities.Persona)cmbPersona.SelectedItem;
                 }
+ 
             }
             else if (Modo == ModoForm.Baja)
                 UsuarioActual.State = BusinessEntity.States.Deleted;
