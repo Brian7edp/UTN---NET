@@ -57,7 +57,7 @@
             <TextBoxStyle Font-Size="0.8em" />
             <TitleTextStyle BackColor="#5D7B9D" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
         </asp:Login>
-        <asp:LinkButton ID="lnkRecordarClave" runat="server" OnClick="lnkRecordarClave_Click" BackColor="Black">Olvidé mi contraseña</asp:LinkButton>
+        <asp:LinkButton ID="lnkRecordarClave" runat="server" OnClick="lnkRecordarClave_Click" >Olvidé mi contraseña</asp:LinkButton>
     </form>
 </body>
 </html>
