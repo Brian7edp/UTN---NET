@@ -1,21 +1,42 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="UI.Web.Site" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="UI.Web.Site" %>
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmins="http://www.w3.org/1999/xhtml">
 <head runat="server">
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Academia</title>
-
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="bodyform" runat="server">
-        <asp:Menu runat="server" ID="menu" DataSourceID="SiteMapDataSource"> </asp:Menu>
-        <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" />
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
-            </asp:ContentPlaceHolder>
+	<form id="bodyForm" runat="server">
+    <div id="wrapper">
 
-        </div>
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li><asp:Menu runat="server" ID="MenuPrincipal" ForeColor="White" DynamicMenuItemStyle-BackColor="Black"  
+        DynamicHoverStyle-BackColor="Black" 
+		DynamicHoverStyle-ForeColor="Red" 
+        StaticHoverStyle-BackColor="Black"
+        StaticHoverStyle-ForeColor="White"  DataSourceID="SiteMapDataSource">
+        </asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" /></li>
+			</ul>
+		</div>
+		<!-- end #menu -->
+	</div>
+	<!-- end #header -->
+	<hr />
+	<!-- end #logo -->
+<!-- end #header-wrapper -->
+
+<div id="page">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+</div>
+</div>	
     </form>
 </body>
 </html>
